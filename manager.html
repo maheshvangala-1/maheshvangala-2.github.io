@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+<link href="./manager.css" rel="stylesheet"><link href="/canvas.css" rel="stylesheet"></head>
+
+<body>
+    <div class="nav_bar">
+        <img src="./public/images/logo.png" alt="company_logo">
+        <p class="nav_bar__userName"></p>
+        <div class="nav_bar__linkList">
+            <ul class="list">
+                <li class="list__item"><a id="manageLayout">Manage Layout</a></li>
+                <!-- <li class="list__item"><a href="#">About</a></li> -->
+                <li class="list__item"><a id="reservations">Reservations</a></li>
+                <!-- <li class="list__item"><a href="#">Menu</a></li> -->
+                <li class="list__item"><a href="#" id="signinLabel">Log In/Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="dashboardCard">
+        <div class="userCounter info">
+            <i class="fas fa-users"></i>
+            <span class="count-numbers"></span>
+            <span class="count-name">Users</span>
+        </div>
+        <div class="ReserveCounter info">
+            <i class="fas fa-utensils"></i>
+            <span class="reservation-numbers"></span>
+            <span class="count-name">Reservations</span>
+        </div>
+        <div class="chartContainer">
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+        <div class="card">
+            <img src="./public/images/layoutCardImage.jpg" alt="cardimage">
+            <hr>
+            <div class="dashboardCard__content">
+                <h4>Manage Restaurant Layout</h4>
+                <p>Add Chairs, Tables,etc.</p>
+            </div>
+            <!-- <button>Manage Layout</button> -->
+        </div>
+        <div class="card2">
+            <img src="./public/images/reservationCardImage.jpg" alt="cardimage">
+            <hr>
+            <div class="dashboardCard__content">
+                <h4>See All The Reservations</h4>
+                <p>Table Formatted</p>
+            </div>
+            <!-- <button>Reservations</button> -->
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="form-group admin-menu">
+            <div class="row">
+                <div class="form-group">
+                    <label>Width (px)</label>
+                    <input type="number" id="width" class="form-control" value="800" />
+                </div>
+                <div class="form-group">
+                    <label>Height (px)</label>
+                    <input type="number" id="height" class="form-control" value="812" />
+                </div>
+                <p>press ENTER to show the effect</p>
+            </div>
+            <div class="btn-group">
+                <button class="rectangle">Add &#9647; Table</button>
+                <button class="circle">Add &#9711; Table</button>
+                <button class="chair">Add Chair</button>
+                <button class="h_bar">Add Bar Counter</button>
+                <button class="wall">Add Wall</button>
+                <button class="remove">Remove Item</button><br>
+                <button id="save">Save Layout</button><br>
+                <button class="customer-mode">Customer mode</button>
+            </div>
+        </div>
+        <div class="canvasAlign">
+            <canvas id="canvas" width="800" height="812"></canvas>
+        </div>
+
+        <div class="form-group customer-menu" style="display: none;">
+            <div class="btn-group">
+                <button class="btn btn-success submit">Submit reservation</button>
+                <button class="btn btn-warning admin-mode">Admin mode</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="reservations">
+        <div class="reservations__container">
+            <table class="reservations__container__table">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Reservation Details</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+    <!-- <div class="modal fade" id="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <p id="modal-table-id"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <footer>
+        <div class="footer__about">
+            <img src="./public/images/logo.png" alt="footer-logo">
+            <ul class="footer__about__contactus">
+                <li>
+                    22 Royal Street, Sundance Avenue, New York
+                </li>
+                <li>
+                    <span>RESERVATIONS NUMBER:</span> +00 25 854 78521
+                </li>
+
+                <li>
+                    <span>WORKING HOURS:</span>
+                </li>
+                <li>
+                    MON- FRI: 08:00 AM - 10:00 PM
+                </li>
+                <li>SAT - SUN: 10:00 AM - 11:00 PM</li>
+            </ul>
+        </div>
+        <div class="copyright-container">
+            <div class="container-row">
+                <div class="copyright">
+                    <p>&copy; Kitchen's Aroma 2016. All rights reserved.</p>
+                </div>
+                <ul class="footer-list">
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="about.html">About</a></li>
+                    <li> <a href="menu.html">Menu</a></li>
+                    <li> <a href="reservation.html">Reservations</a> </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+<script src="./manager.bundle.js"></script><script src="./canvas.bundle.js"></script></body>
+
+</html>

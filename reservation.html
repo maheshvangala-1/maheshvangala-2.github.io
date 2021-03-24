@@ -1,0 +1,91 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Reservation Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="css/Booking.css"> -->
+<link href="./reservation.css" rel="stylesheet"><link href="/canvas.css" rel="stylesheet"></head>
+
+<body>
+
+    <section class="banner">
+        <img src="./public/images/logo.png" alt="logo" onclick='window.open("index.html")'>
+        <h3 id="reservation_history_link" >See your Reservation History</h3>
+        <h1 id="bookATable">Book Your Table</h1>
+        <div class="card-container" id="card-container">
+            <div class="card-container__card-img">
+            </div>
+            <div class="card-container__head">
+                <h2>Reservation</h2>
+                <form method="POST" id="form" class="card-container__form" action="#">
+                    <div class="form-row">
+                        <input type="date" name="date" id="date" required>
+                        <!-- <input type="time" name="time" id="time" required> -->
+                        <select name="time" id="time" required>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                            <option value="20:00">8:00 PM</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <input type="text" name="fullName" id="name" placeholder="Full Name" required>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <!-- <input type="text" name="number" id="number" maxlength="10" placeholder="Phone Number" required> -->
+                    </div>
+                    <div class="form-row">
+                        <input type="text" name="count" id="people_count" maxlength="1" placeholder="No. Of Persons"
+                            min="1" required>
+                        <input type="submit" value="SELECT TABLE">
+                    </div>
+                </form>
+            </div> 
+        </div>
+        <div class="container-fluid">
+            <div class="form-group admin-menu" style="display: none;">
+                <div class="row">
+                    <div class="col-sm-2 col-sm-offset-3 form-group">
+                        <label>Width (px)</label>
+                        <input type="number" id="width" class="form-control" value="800" />
+                    </div>
+                    <div class="col-sm-2 form-group">
+                        <label>Height (px)</label>
+                        <input type="number" id="height" class="form-control" value="812" />
+                    </div>
+                    <div class="col-sm-2 form-group">
+                        <label>&nbsp;</label>
+                        <br />
+                        <button id="save" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button class="rectangle">Add &#9647; Table</button>
+                    <button class="circle">Add &#9711; Table</button>
+                    <button class="chair">Add Chair</button>
+                    <button class="h_bar">Add Bar Counter</button>
+                    <button class="wall">Add Wall</button>
+                    <button class="remove">Remove Item</button><br>
+                    <button id="save">Save Layout</button><br>
+                    <button class="customer-mode">Customer mode</button>
+                </div>
+            </div>
+
+            <canvas id="canvas" width="800" height="812"></canvas>
+            <div class="form-group customer-menu" style="display: none;">
+                <div class="btn-group">
+                    <button class="btn btn-success submit">Submit reservation</button>
+                    <!-- <button class="btn btn-warning admin-mode">Admin mode</button> -->
+                </div>
+            </div>
+
+
+        </div>
+        <div id="reservationHistoryContainer">
+
+        </div>
+    </section>
+
+<script src="./reservation.bundle.js"></script><script src="./canvas.bundle.js"></script></body>

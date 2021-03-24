@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="login-page">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<link href="./login.css" rel="stylesheet"></head>
+
+<body class="login-body">
+    <div class="login-body__logo">
+    </div>
+    <div class="login-body__wrapper fadeInDown">
+        <img src="./public/images/logo.png" alt="logo" class="second">
+        <div class="formContent">
+            <h2 class="active underlineHover inactive" id="signin"> Sign In </h2>
+            <h2 class="inactive underlineHover " id="signup">Sign Up </h2>
+
+            <!-- <div class="fadeIn first">
+          </div> -->
+            <div >
+                <form id="formContent__loginForm">
+                    <input type="email" required id="login_email" class="fadeIn second" name="email"
+                        placeholder="Email">
+                    <i class="fas fa-at second" class="icons"></i>
+                    <input type="password" required id="password" class="fadeIn third" name="password"
+                        placeholder="Password">
+                    <span id="toggle-password">
+                        <span id="eyeIcon">
+                            <i class="fas fa-eye"></i>
+                        </span>
+                        <span id="eyeIconSlash">
+                            <i class="fas fa-eye-slash"></i>
+                        </span>
+                    </span>
+                    <input type="submit" class="fadeIn fourth" value="Log In">
+                    
+                    <div class="formContent__formFooter">
+                        <a class="underlineHover-link" href="#">Forgot Password?</a>
+                    </div>
+                </form>
+            </div>
+
+            <form id="formContent__signupForm">
+                <input type="text" required id="signup_name" class="fadeIn second" name="signup_name"
+                    placeholder="Full Name">
+                <i class="fas fa-user fadeIn" class="icons"></i>
+                <input type="email" required id="signup_email" class="fadeIn second" name="signup_email"
+                    placeholder="Email">
+                <i class="fas fa-at fadeIn" class="icons"></i>
+                <input type="password" required id="signup_password" class="fadeIn third" name="signup_password"
+                    placeholder="Password">
+                    <span id="signup-toggle-password">
+                        <span id="signup_eyeIcon">
+                            <i class="fas fa-eye"></i>
+                        </span>
+                        <span id="signup_eyeIconSlash">
+                            <i class="fas fa-eye-slash"></i>
+                        </span>
+                    </span>
+                <input type="password" required id="confirm_password" class="fadeIn third" name="confirm_password"
+                    placeholder="Confirm Password">
+                    <span id="confirm-toggle-password">
+                        <span id="confirm_eyeIcon">
+                            <i class="fas fa-eye"></i>
+                        </span>
+                        <span id="confirm_eyeIconSlash">
+                            <i class="fas fa-eye-slash"></i>
+                        </span>
+                    </span>
+                <div class="pwd_error">
+                    <p class="third">Password Doesn't Match</p>
+                </div>
+                <!-- <select name="signup_role" id="signup_role" class="fadeIn third" required>
+                        <option value="user" selected>User</option>
+                        <option value="manager">Manager</option>
+                    </select> -->
+
+                <input type="submit" class="fadeIn fourth" value="SignUp">
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; Kitchen's Aroma 2016. All rights reserved.
+    </footer>
+
+<script src="./login.bundle.js"></script></body>
+
+</html>

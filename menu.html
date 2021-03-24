@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+<link href="./menu.css" rel="stylesheet"></head>
+
+<body>
+    <div class="menu-head_container">
+        <div class="menu-nav_bar">
+            <img src="./public/images/logo.png" onclick='window.open("#")' alt="company_logo">
+            <p class="nav_bar__userName"></p>
+            <div class="nav_bar__linkList">
+                <ul class="list">
+                    <li class="list__item"><a href="index.html">Home</a></li>
+                    <li class="list__item"><a href="about.html">About</a></li>
+                    <li class="list__item"><a href="reservation.html">Reservations</a></li>
+                    <li class="list__item"><a href="login.html" id="signinLabel">Log In/Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="head_container__content">
+            <h1 class="head_container__header">Delicious Cousine</h1>
+            <h2 class="head_container__header2">Discover the menu</h2>
+        </div>
+    </div>
+    <div class="body-container">
+        <div class="centered-conteainer">
+            <div class="custom-heading">
+                <h3><span>The menu</span></h3>
+                <h3>Welcome to Kitchen's Aroma</h3>
+            </div><!-- .custom-heading end -->
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="wrapper__menu">
+            <!-- <div class="menu__item">
+                <img src="./images/menu-item-1.jpg" alt="menu-item-1">
+                <div class="menu-content">
+                    <h4>Spinach Soup <span>&#8377;15</span></h4>
+                    <p>Milk, eggs, spinach, garlic, onion, potato, chicken stock, lemon.</p>
+                    <button class="cd-add-to-cart js-cd-add-to-cart">
+                        <i class="fa fa-plus"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="./images/menu-item-2.jpg" alt="menu-item-2">
+                <div class="menu-content">
+                    <h4>Tomato Soup<span>&#8377;45</span></h4>
+                    <p>Tomatos, onion, carrot, celery, olive oil, tomato puree, sugar, vegetable soup.</p>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="./images/menu-item-3.jpg" alt="menu-item-3">
+                <div class="menu-content">
+                    <h4>Mushroom Soup<span>&#8377;41</span></h4>
+                    <p>Mushrooms, olive oil, garlic, onion, sea salt, black pepper, parsley, cheese.</p>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="./images/menu-item-4.jpg" alt="menu-item-4">
+                <div class="menu-content">
+                    <h4>Waldorf Salad<span>&#8377;15</span></h4>
+                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="./images/menu-item-5.jpg" alt="menu-item-5">
+                <div class="menu-content">
+                    <h4>Grilled Chicken Kebabs<span>&#8377;35</span></h4>
+                    <p>Chicken thighs, chicken drumsticks, potatoes, ayenne pepper.</p>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="./images/menu-item-6.jpg" alt="menu-item-6">
+                <div class="menu-content">
+                    <h4>chicken fried salad <span>&#8377;54</span></h4>
+                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="cd-cart cd-cart--empty js-cd-cart">
+		<a href="#0" class="cd-cart__trigger text-replace">
+			Cart
+			<ul class="cd-cart__count">
+				<!-- cart items count -->
+				<li>0</li>
+				<li>0</li>
+			</ul> <!-- .cd-cart__count -->
+		</a>
+
+		<div class="cd-cart__content">
+			<div class="cd-cart__layout">
+				<header class="cd-cart__header">
+					<h2>Cart</h2>
+					
+				</header>
+
+				<div class="cd-cart__body">
+					<ul>
+						<!-- products added to the cart using JavaScript -->
+					</ul>
+				</div>
+
+				<footer class="cd-cart__footer">
+					<button class="cd-cart__checkout">
+						<em>Checkout - &#8377;<span></span>
+							<svg class="icon icon--sm" viewBox="0 0 24 24">
+								<g fill="none" stroke="currentColor">
+									<line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12"
+										x2="21" y2="12" />
+									<polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										points="15,6 21,12 15,18 " />
+								</g>
+							</svg>
+						</em>
+					</button>
+				</footer>
+			</div>
+		</div> <!-- .cd-cart__content -->
+    </div> <!-- cd-cart -->
+<script src="./menu.bundle.js"></script></body>
+
+</html>

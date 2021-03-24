@@ -1,0 +1,93 @@
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8iXnvliEUz3eYPrpDE3kSS6qNnTBNSrE&libraries=places"> </script> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+<link href="./checkout.css" rel="stylesheet"></head>
+
+<body>
+    <div class="logo">
+        <img src="./public/images/logo.png" alt="logo">
+    </div>
+    <br>
+    <div id="toggle">
+        <input type="checkbox" id="lol-checkbox">
+
+        <label id="button" for="lol-checkbox">
+            <div id="knob"></div>
+            <div id="subscribe">Delivery</div>
+            <div id="alright">Take Away</div>
+        </label>
+    </div>
+    <div class="delivery">
+        <h1 class="show_address__notFound"> No Addresses Found</h1>
+        <div class="show_addresses">
+            <div class="addressList"></div>
+        </div>
+        <button class="button" id="addAddress">Add New Address</button>
+
+
+        <div class="add_address_container" id='dialog'>
+            <form id="addressForm" class="container">
+                <span id="close">&times;</span>
+                <br>
+                <p class="container__p">Please enter your shipping details.</p>
+                <hr />
+                <div class="form">
+                    <label class="field">
+                        <span class="field__label" for="address">Address</span>
+                        <input class="field__input" type="text" name="address" id="address" />
+                    </label>
+
+                    <div class="form__fields fields--3">
+                        <label class="field">
+                            <span class="field__label" for="zipcode">Zip code</span>
+                            <input class="field__input" name="zipcode" type="text" id="zipcode" />
+                        </label>
+                        <label class="field">
+                            <span class="field__label" for="city">City</span>
+                            <input class="field__input" name="city" type="text" id="city" />
+                        </label>
+                        <label class="field">
+                            <span class="field__label" for="state">State</span>
+                            <input class="field__input" name="state" type="text" id="state" />
+
+                        </label>
+                    </div>
+                    <hr>
+                    <button type="submit" class="button">Confirm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <div class="submitOrder">
+        <button id='submitOrder'>Submit Order</button>
+    </div>
+    <div class="acknowledgeModal__container">
+        <div class="modal">
+            <!-- <div id="close__container" >
+                <span id="close__modal">
+                    <button  class="fas fa-times"></button>
+                </span>
+            </div> -->
+            <div class="modal__title"></div>
+            <div class="modal__text"></div>
+        </div>
+    </div>
+    <script src='https://unpkg.com/@turf/turf/turf.min.js'></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+        type="text/css" />
+<script src="./checkout.bundle.js"></script></body>
+
+</html>
