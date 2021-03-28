@@ -8,6 +8,25 @@
     <title>Checkout</title>
 <link href="./checkout.css" rel="stylesheet">
 <script>
+     function getDevice()
+    {
+        let width=window.screen.width;
+        let height=window.screen.height;
+        if((width>=240 && width<=480) && (height>=320 && height<=854))
+        {
+            return "Mobile"
+        }
+        else if((width>=600 && width<=1024) && (height>=960 && height<=1366))
+        {
+            return "Tablet";
+        }
+        else{
+            return "Desktop";
+        }
+        
+
+    }
+   
     var digitalData={
         page:{
             "pageName" : document.title,
@@ -20,7 +39,7 @@
         information:{
             "domain":window.location.hostname,
             "device":getDevice(),
-            "date":new Date()
+            "date":new Date().toDateString()
         }
 
     }
