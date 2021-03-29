@@ -14,7 +14,7 @@
           "pageURL" : window.location.href
       },
       siteSection:"Home|Login|Order Online|Add to Cart|CheckOut",
-      userID:"",
+      userID:"12345",
       information:{
           "domain":window.location.hostname,
           "device":"",
@@ -22,9 +22,30 @@
       }
 
   }
+  let width=window.screen.width;
+        let height=window.screen.height;
+
+        if((width>=240 && width<=480) && (height>=320 && height<=854))
+        {
+            digitalData.information.device="Mobile"
+        }
+        else if((width>=600 && width<=1024) && (height>=960 && height<=1366))
+        {
+            digitalData.information.device="Tablet";
+        }
+        else{
+            digitalData.information.device="Desktop";
+        }
+
+
+  
+
   
 
 </script>
+
+
+<script src="./resfuncs.js"></script>
 
 <script src="//assets.adobedtm.com/224be2da76aa/f213f9ccedde/launch-ee89ec40e101-development.min.js" async></script>
 </head>
