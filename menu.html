@@ -6,42 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
 <link href="./menu.css" rel="stylesheet">
-<script>
-     function getDevice()
-    {
-        let width=window.screen.width;
-        let height=window.screen.height;
-        if((width>=240 && width<=480) && (height>=320 && height<=854))
-        {
-            return "Mobile"
-        }
-        else if((width>=600 && width<=1024) && (height>=960 && height<=1366))
-        {
-            return "Tablet";
-        }
-        else{
-            return "Desktop";
-        }
-        
-
-    }
-   
-    var digitalData={
-        page:{
-            "pageName" : document.title,
-            "pageURL" : window.location.href
-        },
-        siteSection:{
-
-        },
-        userID:"123456",
-        information:{
-            "domain":window.location.hostname,
-            "device":getDevice(),
-            "date":new Date().toDateString()
-        }
-
-    }
+<script src="./analyticsData.js">
 </script>
 
 <script src="//assets.adobedtm.com/224be2da76aa/f213f9ccedde/launch-ee89ec40e101-development.min.js" async></script>
