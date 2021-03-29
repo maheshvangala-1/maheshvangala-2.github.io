@@ -6,7 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 <link href="./login.css" rel="stylesheet">
-<script src="./analyticsData.js">
+<script>
+    var digitalData={
+      page:{
+          "pageName" : document.title,
+          "pageURL" : window.location.href
+      },
+      siteSection:"Home|Login|Order Online|Add to Cart|CheckOut",
+      userID:"",
+      information:{
+          "domain":window.location.hostname,
+          "device":"",
+          "date":new Date().toDateString()
+      }
+
+  }
+  
+
 </script>
 <script src="//assets.adobedtm.com/224be2da76aa/f213f9ccedde/launch-ee89ec40e101-development.min.js" async></script>
 </head>
@@ -88,6 +104,12 @@
         &copy; Kitchen's Aroma 2016. All rights reserved.
     </footer>
 
-<script src="./login.bundle.js"></script></body>
+<script src="./login.bundle.js"></script>
+
+<script src="./resfuncs.js">
+    
+</script>
+</body>
+
 
 </html>
