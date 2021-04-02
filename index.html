@@ -182,9 +182,10 @@
 <script>
     let searchbtn11=document.getElementById("searchbtn11")
     searchbtn11.onclick=function(){
+        let search1 =document.getElementById("search1").value;
     
         let search={}
-        search.searchKeyWord="home"
+        search.searchKeyWord=search1;
         digitalData.search=search;
         _satellite.track('home');
 
