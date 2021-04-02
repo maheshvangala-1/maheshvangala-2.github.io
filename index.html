@@ -67,7 +67,7 @@
             </div> -->
             <div class="nav_bar__linkList">
                 <input type="text" id="search1">
-                <button type="button" id="searchbtn11" onclick="_satellite.track('home')">SEARCH</button>
+                <button type="button" id="searchbtn11">SEARCH</button>
                 <ul class="list">
                     <li class="list__item"><a href="index.html">Home</a></li>
                     <li class="list__item"><a href="about.html">About</a></li>
@@ -178,6 +178,17 @@
 
 <script src="./resfuncs.js">
     
+</script>
+<script>
+    let searchbtn11=document.getElementById("searchbtn11")
+    searchbtn11.onclick=function(){
+    
+        let search={}
+        search.searchKeyWord="home"
+        digitalData.search=search;
+        _satellite.track('home');
+
+    }
 </script>
 </body>
 
