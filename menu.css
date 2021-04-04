@@ -143,7 +143,7 @@
 }
 .menu__item:active
 {
-  border: 2px solid green;
+  border: 5px solid green;
 }
 .menu__item .cd-add-to-cart {
   float: right;
