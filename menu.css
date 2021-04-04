@@ -141,6 +141,10 @@
   align-items: center;
   padding: 15px;
 }
+.menu__item:active
+{
+  border: 2px solid green;
+}
 .menu__item .cd-add-to-cart {
   float: right;
   border: 0px;
