@@ -19,7 +19,8 @@
           "domain":window.location.hostname,
           "device":"",
           "date":new Date().toDateString()
-      }
+      },
+      products:[]
 
   }
   let width=window.screen.width;
@@ -170,6 +171,60 @@
 
 <script src="./resfuncs.js">
     
+</script>
+<script>
+
+        let food_items=document.getElementsByClassName("menu-content");
+    
+        console.log("HELLO ",food_items.length)
+        
+    for(let i=0;i<food_items.length;i++)
+    {
+        let element=food_items[i].children[0]
+        let prod_name=element.innerText.split("\n")[0];
+  
+        let category="";
+  
+        var mercheVar="";
+  
+    if(i<=4)
+    {
+        category="Soups";
+        mercheVar="Tomato soup";
+    }
+    else
+    {
+        category="Biryani";
+    
+        mercheVar="Chicken Biryani"
+    }
+  
+    let quantity=0;
+  
+    let price=0;
+  
+    let discount="20";
+  
+    let obj={}
+    
+    obj.category=category;
+    obj.productname=prod_name;
+    obj.quantity=quantity;
+    obj.price=price;
+    obj.discount=discount;
+    obj.mercheVar=mercheVar;
+
+    digitalData.products.push(obj)
+
+  
+  
+  
+
+    }
+    
+    
+
+
 </script>
 </body>
 

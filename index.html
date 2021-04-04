@@ -25,8 +25,7 @@
             "domain":window.location.hostname,
             "device":"",
             "date":new Date().toDateString()
-        },
-        products:[]
+        }
 
     }
     let width=window.screen.width;
@@ -192,8 +191,16 @@
 
     }
     
-    let food_items=document.getElementsByClassName("menu-content");
-
+    
+</script>
+</body>
+<script>
+    window.onload=function()
+    {
+        let food_items=document.getElementsByClassName("menu-content");
+    
+        console.log("HELLO ",food_items.length)
+        
     for(let i=0;i<food_items.length;i++)
     {
         let element=food_items[i].children[0]
@@ -237,9 +244,10 @@
   
 
     }
+    }
+    
 
 
 </script>
-</body>
 
 </html>
