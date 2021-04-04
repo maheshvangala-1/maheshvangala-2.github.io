@@ -131,6 +131,7 @@
 }
 
 .menu__item {
+  cursor: pointer;
   flex-basis: 48%;
   margin-bottom: 40px;
   padding-bottom: 40px;
