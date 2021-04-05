@@ -490,9 +490,19 @@
   font-size: 14.6px;
   font-weight: bold;
   /* padding: 10px; */
-  margin-left: 20%;
+  margin-left: 10%;
 }
+.prod_category
+{
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14.6px;
+  font-weight: bold;
+  margin-left: 5%;
+  color: #f2745f;
 
+  
+  margin-bottom: 2%;
+}
 .cd-cart__actions {
   display: flex;
   font-size: 12.12px;
@@ -505,8 +515,9 @@
 }
 
 .cd-cart__delete-item {
-  margin-right: 10px;
-  margin-top: 5px;
+  margin-right: 20px;
+  margin-top: 3px;
+  margin-left: 20px;
 }
 .cd-cart__delete-item:hover {
   color: #e94a35;
@@ -514,7 +525,7 @@
 
 .cd-cart__quantity {
   display: flex;
-  padding: 5px;
+  margin-top: 3px;
 }
 .cd-cart__quantity label {
   margin-right: 5px;
