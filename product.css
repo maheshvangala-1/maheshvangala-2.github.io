@@ -1,0 +1,15 @@
+#mydiv
+{
+    font-family: "Montserrat-UltraLight", system-ui;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: lighter;
+    margin-left: 500px;
+    margin-top: 70px;
+    margin-bottom: 170px;
+    color: #f2745f;
+}
+.menu__item
+{
+    margin-left: 300px;
+}

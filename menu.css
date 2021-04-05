@@ -131,7 +131,7 @@
 }
 
 .menu__item {
-  cursor: pointer;
+  
   flex-basis: 48%;
   margin-bottom: 40px;
   padding-bottom: 40px;
@@ -141,9 +141,8 @@
   align-items: center;
   padding: 15px;
 }
-.menu__item:active
-{
-  border: 5px solid green;
+.menu__item>img{
+  cursor: pointer;
 }
 .menu__item .cd-add-to-cart {
   float: right;
