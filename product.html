@@ -7,6 +7,49 @@
     <title>Product</title>
     <link rel="stylesheet" href="./menu.css">
     <link rel="stylesheet" href="./product.css">
+
+    <script>
+        var digitalData={
+          page:{
+              "pageName" : document.title,
+              "pageURL" : window.location.href
+          },
+          siteSection:"Home|Login|Order Online|Add to Cart|CheckOut",
+          userID:"",
+          information:{
+              "domain":window.location.hostname,
+              "device":"",
+              "date":new Date().toDateString()
+          },
+          products:[]
+    
+      }
+      let width=window.screen.width;
+            let height=window.screen.height;
+    
+            if((width>=240 && width<=480) && (height>=320 && height<=854))
+            {
+                digitalData.information.device="Mobile"
+            }
+            else if((width>=600 && width<=1024) && (height>=960 && height<=1366))
+            {
+                digitalData.information.device="Tablet";
+            }
+            else{
+                digitalData.information.device="Desktop";
+            }
+    
+    
+      
+    
+      
+    
+    </script>
+    
+    
+    <script src="./resfuncs.js"></script>
+    <script src="//assets.adobedtm.com/224be2da76aa/f213f9ccedde/launch-ee89ec40e101-development.min.js" async></script>
+     
 </head>
 <body>
     <div id="mydiv">
